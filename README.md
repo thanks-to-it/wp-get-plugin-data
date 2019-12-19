@@ -3,6 +3,24 @@ A Node Package that mimics the [`get_plugin_data()`](https://developer.wordpress
 
 Use it like this:
 
+### plugin-file.php
+```php
+<?php
+/**
+ * Plugin Name: My Plugin File
+ * Plugin URI: https://wordpress.org/plugins/...
+ * Description: My plugin description
+ * Version: 1.0.0
+ * Author: Author Name,
+ * Author URI: https://github.com/... 
+ * Text Domain: my-plugin-domain
+ * Domain Path: /src/languages
+ * Requires at least: 3.0.0
+ * Requires PHP: 7.0
+ */
+ ```
+
+### app.js
 ```js
 const WPGetPluginData = require('wp-get-plugin-data');
 WPGetPluginData('plugin-file.php').then(function(parsedFile){    
@@ -18,9 +36,7 @@ WPGetPluginData('plugin-file.php').then(function(parsedFile){
   author: 'Author Name',
   authorURI: 'https://github.com/...',
   textDomain: 'my-plugin-domain',
-  domainPath: '...',
-  network: '...',
-  requiresWP: '...',
-  requiresPHP: '...',
-  _sitewide: '...' }
+  domainPath: '/src/languages',  
+  requiresWP: '3.0.0',
+  requiresPHP: '7.0'   }
 ```
