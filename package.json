@@ -1,13 +1,20 @@
 {
   "name": "wp-get-plugin-data",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parses a WordPress plugin or any PHP file contents to retrieve its metadata, just like get_plugin_data()",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "parse",
+    "php",
+    "comment"
+  ],
+  "author": "Pablo S G Pacheco",
+  "license": "MIT",
+  "homepage": "https://github.com/thanks-to-it/wp-get-plugin-data"
   "dependencies": {
     "line-reader": "^0.4.0"
   }
