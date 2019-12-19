@@ -4,7 +4,7 @@ A Node Package that parses a WordPress plugin or any PHP file contents to retrie
 
 # Usage
 
-### plugin-file.php
+`plugin-file.php`
 ```php
 <?php
 /**
@@ -21,7 +21,7 @@ A Node Package that parses a WordPress plugin or any PHP file contents to retrie
  */
  ```
 
-### app.js
+`app.js`
 ```js
 const WPGetPluginData = require('wp-get-plugin-data');
 WPGetPluginData('plugin-file.php').then(function(parsedFile){    
