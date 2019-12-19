@@ -1,5 +1,6 @@
 # WP Get Plugin Data 
-A Node Package that mimics the [`get_plugin_data()`](https://developer.wordpress.org/reference/functions/get_plugin_data/) WordPress function
+
+A Node Package that parses a WordPress plugin or any PHP file contents to retrieve its metadata, just like [`get_plugin_data()`](https://developer.wordpress.org/reference/functions/get_plugin_data/) WordPress function
 
 Use it like this:
 
